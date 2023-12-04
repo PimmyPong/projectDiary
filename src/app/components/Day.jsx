@@ -18,6 +18,7 @@ export default function Day({ day, setDay, month, year, diary }) {
 		days.push(
 			<div className={dayClass} onClick={() => setDay(i)}>
 				<span>{i}</span>
+				{"" + year + month + i in diary && <span>💌</span>}
 			</div>
 		);
 	}
